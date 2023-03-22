@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+// import 'package:url_launcher/url_launcher.dart';
+import 'appdrawer.dart';
+// import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
 class homepage extends StatelessWidget {
   @override
@@ -10,10 +13,7 @@ class homepage extends StatelessWidget {
         backgroundColor: Colors.black54,
         title: Text("Hope you like it"),
       ),
-      drawer: Drawer(
-        child: SafeArea(child: Text("data")),
-        semanticLabel: "Sections",
-      ),
+      drawer: appdrawer(),
       backgroundColor: Colors.blueGrey.shade600,
       body: SafeArea(
           child: Container(
@@ -64,21 +64,26 @@ class homepage extends StatelessWidget {
             Padding(
               padding:
                   const EdgeInsets.symmetric(vertical: 5.0, horizontal: 16.0),
-              child: Card(
-                child: ListTile(
-                  leading: Icon(
-                    Icons.phone,
-                    size: 20.0,
-                    color: Colors.blueGrey.shade900,
+              child: InkWell(
+                child: Card(
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      size: 20.0,
+                      color: Colors.blueGrey.shade900,
+                    ),
+                    title: Text(mob,
+                        style: TextStyle(
+                          color: Colors.teal.shade900,
+                          fontSize: 16.0,
+                          fontFamily: "Source Sans Pro",
+                          fontWeight: FontWeight.w900,
+                        )),
                   ),
-                  title: Text(mob,
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontSize: 16.0,
-                        fontFamily: "Source Sans Pro",
-                        fontWeight: FontWeight.w900,
-                      )),
                 ),
+                onTap: () {
+                  
+                },
               ),
             ),
             Padding(
