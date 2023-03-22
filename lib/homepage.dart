@@ -32,6 +32,7 @@ class homepage extends StatelessWidget {
           // ignore: prefer_const_literals_to_create_immutables
           children: <Widget>[
             CircleAvatar(
+              backgroundColor: Colors.teal.shade400,
               radius: 50,
               backgroundImage: AssetImage('images/Shubh.png'),
             ),
@@ -81,9 +82,7 @@ class homepage extends StatelessWidget {
                         )),
                   ),
                 ),
-                onTap: () {
-                  
-                },
+                onTap: () {},
               ),
             ),
             Padding(
