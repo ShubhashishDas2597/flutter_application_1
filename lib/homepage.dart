@@ -7,6 +7,7 @@ class homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const mob = "+918629950651";
+    const email = "Shubhashish.das.cool@outlook.com";
     return Scaffold(
       appBar: AppBar(
         shadowColor: Colors.teal.shade900,
@@ -92,7 +93,7 @@ class homepage extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(Icons.email_rounded,
                       size: 20.0, color: Colors.blueGrey.shade900),
-                  title: Text("Shubhashish.das.cool@outlook.com",
+                  title: Text(email,
                       style: TextStyle(
                         color: Colors.teal.shade900,
                         fontSize: 16.0,
