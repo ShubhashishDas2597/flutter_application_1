@@ -5,32 +5,22 @@ class appdrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // const email = "Shubhashish.das.cool@outlook.com";
     return Drawer(
         child: SafeArea(
             child: ListView(
       padding: EdgeInsets.zero,
       children: <Widget>[
-        DrawerHeader(
-          padding: EdgeInsets.zero,
-          child: UserAccountsDrawerHeader(
-            decoration: BoxDecoration(color: Colors.red),
-            accountName: Text(
-              "Abhishek Mishra",
-              style: TextStyle(fontSize: 18),
-            ),
-            accountEmail: Text("abhishekm977@gmail.com"),
-            currentAccountPictureSize: Size.square(50),
-            currentAccountPicture: CircleAvatar(
-              backgroundColor: Color.fromARGB(255, 165, 255, 137),
-              child: Text(
-                "A",
-                style: TextStyle(fontSize: 30.0, color: Colors.blue),
-              ), //Text
-            ), //circleAvatar
-          ),
-          // Text("Sections"),
-          // decoration: BoxDecoration(color: Colors.blue),
-        ),
+        // DrawerHeader(
+        //   padding: EdgeInsets.zero,
+        //   child: UserAccountsDrawerHeader(
+        //       decoration: BoxDecoration(color: Colors.teal.shade500),
+        //       accountName: Text(
+        //         "Sections",
+        //         style: TextStyle(fontSize: 18),
+        //       ),
+        //       accountEmail: Text(email)),
+        // ),
         ListTile(
           leading: Icon(
             Icons.ac_unit,
