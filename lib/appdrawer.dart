@@ -5,13 +5,13 @@ class appdrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // const email = "Shubhashish.das.cool@outlook.com";
+     const email = "Shubhashish.das.cool@outlook.com";
     return Drawer(
         child: SafeArea(
             child: ListView(
       padding: EdgeInsets.zero,
       children: <Widget>[
-        // DrawerHeader(
+        //  DrawerHeader(
         //   padding: EdgeInsets.zero,
         //   child: UserAccountsDrawerHeader(
         //       decoration: BoxDecoration(color: Colors.teal.shade500),
@@ -23,17 +23,16 @@ class appdrawer extends StatelessWidget {
         // ),
         ListTile(
           leading: Icon(
-            Icons.ac_unit,
+            Icons.work_history_rounded,
           ),
           title: Text('Technicals'),
           onTap: () {
-            // Update the state of the app.
-            // ...
+            Navigator.pushNamed(context, '/tech');
           },
         ),
         ListTile(
           leading: Icon(
-            Icons.ac_unit,
+            Icons.school_rounded,
           ),
           title: Text('Education'),
           onTap: () {
@@ -43,7 +42,7 @@ class appdrawer extends StatelessWidget {
         ),
         ListTile(
           leading: Icon(
-            Icons.ac_unit,
+            Icons.local_activity_rounded,
           ),
           title: Text('Additional Activites and Hobbies'),
           onTap: () {
@@ -53,7 +52,7 @@ class appdrawer extends StatelessWidget {
         ),
         ListTile(
           leading: Icon(
-            Icons.ac_unit,
+            Icons.feedback_rounded,
           ),
           title: Text('Leave a Feedback'),
           onTap: () {
